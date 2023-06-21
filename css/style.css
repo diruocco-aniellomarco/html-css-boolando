@@ -53,12 +53,6 @@ a {
 
 /* Main/Cards */
 
-/* main {
-    margin: 120px auto;
-    flex-wrap: wrap;
-    justify-content: center;
-} */
-
 .container {
     max-width: var(--max-width);
     margin: 120px auto;
@@ -68,12 +62,13 @@ a {
 .card {
     margin-bottom: 20px;
     width: 450px;
-    /* height: 800px; */
-    border: 1px solid black;
+    height: 705px;
+    /* border: 1px solid black; */
+    position: relative;
 }
 
 .card_photo>img {
-    max-width: 100%;
+    max-width: 450px;
 }
 
 .note_card {
@@ -83,15 +78,15 @@ a {
     bottom: 60px;
     color: white;
     font-weight: bold;
+    z-index: 2;
 }
 .discount {
     width: 55px;
     padding: 3px 10px;
     background-color: red;
     margin-right: 5px;
-    /* color: white;
-    font-weight: bold; */
-}
+} 
+
 .sustainability {
     width: 100px;
     padding: 3px 10px;
@@ -158,4 +153,16 @@ footer {
 .heart:hover {
     color: red;
 }
+.top_hover {
+    position: absolute;
+    width: 450px;
+    left: 0;
+    top:0;
+    opacity: 0;
+}
+
+.top_hover:hover {
+   opacity: 1;
+}
+
 
