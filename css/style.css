@@ -1,3 +1,6 @@
+:root {
+    --max-width: 1400px;
+}
 /* Generics */
 * {
     box-sizing: border-box;
@@ -5,10 +8,7 @@
     padding: 0;
 }
 
-ul {
-    list-style: none;
-    font-weight: bold;
-}
+
 
 ul>li {
     display: inline;
@@ -28,6 +28,7 @@ a {
     position: relative;
 }
 /* Header */
+
 .top {
     background-color: #ff6900;
     min-height: 70px;
@@ -41,19 +42,31 @@ a {
     z-index: 2;
 }
 
+.top>ul {
+    list-style: none;
+    font-weight: bold;
+}
+
 .top>img {
     max-height: 30px;
 }
 
 /* Main/Cards */
 
-main {
+/* main {
     margin: 120px auto;
     flex-wrap: wrap;
     justify-content: center;
+} */
+
+.container {
+    max-width: var(--max-width);
+    margin: 120px auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .card {
-    margin: 20px;
+    margin-bottom: 20px;
     width: 450px;
     /* height: 800px; */
     border: 1px solid black;
@@ -114,3 +127,35 @@ main {
     font-weight:100;
     color:black;
 }
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    height: 100px;
+    
+}
+
+.container_footer {
+    max-width: var(--max-width);
+    height: 100%;
+    margin: 5px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link_footer>li {
+    margin-right: 10px;
+}
+.social {
+    margin-top: 5px;
+}
+.social>li {
+    margin-right: 10px;   
+}
+
+/* hoover */
+.heart:hover {
+    color: red;
+}
+
