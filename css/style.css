@@ -60,7 +60,7 @@ a {
     justify-content: space-between;
 }
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 450px;
     height: 705px;
     /* border: 1px solid black; */
@@ -150,9 +150,12 @@ footer {
 }
 
 /* hoover */
+    /* cuore rosso */
 .heart:hover {
     color: red;
 }
+
+    /* seconda immagine di card_photo */
 .top_hover {
     position: absolute;
     width: 450px;
