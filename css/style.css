@@ -54,8 +54,8 @@ main {
 }
 .card {
     margin: 20px;
-    width: 500px;
-    height: 800px;
+    width: 450px;
+    /* height: 800px; */
     border: 1px solid black;
 }
 
@@ -98,4 +98,19 @@ main {
 
 .heart {
     font-size: 30px;
+}
+
+.brand {
+   font-size: 0.9rem;
+}
+
+.a_cost {
+   color: red; 
+   font-weight: bold;
+}
+
+.p_cost {
+    text-decoration: line-through;
+    font-weight:100;
+    color:black;
 }
